@@ -1,0 +1,54 @@
+#include<stdio.h>
+int main(){
+    int a,b,c,max,mid,low;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b){
+        if(b>c){
+            max=a;
+            mid=b;
+            low=c;
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",low,mid,max,a,b,c);
+        }
+    }
+     if(a>c){
+        if(c>b){
+            max=a;
+            mid=c;
+            low=b;
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",low,mid,max,a,b,c);
+        }
+    }
+    if(b>a){
+        if(a>c){
+            max=b;
+            mid=a;
+            low=c;
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",low,mid,max,a,b,c);
+        }
+    }
+     if(b>c){
+        if(c>a){
+            max=b;
+            mid=c;
+            low=a;
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",low,mid,max,a,b,c);
+        }
+    }
+     if(c>a){
+        if(a>b){
+            max=c;
+            mid=a;
+            low=b;
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",low,mid,max,a,b,c);
+        }
+    }
+     if(c>b){
+        if(b>a){
+            max=c;
+            mid=b;
+            low=a;
+        printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",low,mid,max,a,b,c);
+        }
+    }
+    return 0;
+}
